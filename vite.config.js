@@ -8,7 +8,9 @@ export default defineConfig({
       formats: ['es']
     },
     rollupOptions: {
-      external: /^lit/
-    }
+      input: {
+        main: './index.html'
+      }
+    },
   }
 })
